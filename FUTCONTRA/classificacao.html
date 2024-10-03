@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <style>
+        body{
+            background-image: url('img/futebol.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificacao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="classificacao.html">classificacao</a>
+        <a href="agendamento.html">Agendamento</a>
+        <a href="Estatisticas.html">Estatisticas</a>
+      </div>
+</header>
+<body>
+    <h1>Tabela de Classificação</h1>
+    
+    <input type="text" id="searchInput" placeholder="Buscar por time..." onkeyup="filterTable()">
+
+    <table id="classificacaoTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Posição</th>
+                <th onclick="sortTable(1)">Time</th>
+                <th onclick="sortTable(2)">Jogos</th>
+                <th onclick="sortTable(3)">Vitórias</th>
+                <th onclick="sortTable(4)">Empates</th>
+                <th onclick="sortTable(5)">Derrotas</th>
+                <th onclick="sortTable(6)">Gols Pró</th>
+                <th onclick="sortTable(7)">Gols Contra</th>
+                <th onclick="sortTable(8)">Pontos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Time A</td>
+                <td>10</td>
+                <td>8</td>
+                <td>1</td>
+                <td>1</td>
+                <td>25</td>
+                <td>10</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Time B</td>
+                <td>10</td>
+                <td>7</td>
+                <td>2</td>
+                <td>1</td>
+                <td>22</td>
+                <td>12</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Time C</td>
+                <td>10</td>
+                <td>6</td>
+                <td>3</td>
+                <td>1</td>
+                <td>20</td>
+                <td>15</td>
+                <td>30</td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
