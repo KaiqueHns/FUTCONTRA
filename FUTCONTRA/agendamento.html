@@ -33,15 +33,38 @@
                 <option value="Arena A">Arena W10</option>
                 <option value="Arena B">Arena Tony</option>
                 <option value="Arena C">Arena Campo 14</option>
+                <label for="arena">Escolha a Arena:</label>
             </select>
             <label for="data">Data:</label>
             <input type="date" id="data" required>
             <label for="hora">Hora:</label>
             <input type="time" id="hora" required>
+
+                <form id="Adversario-form">
+                    <label for="Adversario">Escolha o Adversario 1</label>
+                    <select id="Adversario" required>
+                        <option value="">Selecione...</option>
+                        <option value="Futzem">Futzem</option>
+                        <option value="Invictus">Invictus</option>
+                        <option value="RealNc">RealNc</option>
+                        <label for="Adversario">Escolha Adversario 1</label>
+                    </select>
+                    
+                    <form id="Adversario-form">
+                        <label for="Adversario">Escolha o Adversario 2</label>
+                        <select id="Adversario" required>
+                            <option value="">Selecione...</option>
+                            <option value="Arena A">Futzem</option>
+                            <option value="Arena B">Invictus</option>
+                            <option value="Arena C">RealNc</option>
+                            <label for="Adversario">Escolha Adversario 2</label>
+                        </select>
+                
             <br><button type="submit">Agendar</button>
         </form>
         <div id="mensagem"></div>
     </div>
+
 
  
 <script src="script.js"></script>

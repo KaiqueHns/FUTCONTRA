@@ -5,10 +5,10 @@ def conectar_mysql():
     try:
         # Conectar ao banco de dados MySQL
         conn = mysql.connector.connect(
-            host='localhost',       # Endereço do servidor
-            user='seu_usuario',     # Seu nome de usuário
-            password='sua_senha',   # Sua senha
-            database='nome_do_banco'  # Nome do banco de dados
+            host='3306',       # Endereço do servidor
+            user='root',     # Seu nome de usuário
+            password='D6d3h7g707',   # Sua senha
+            database='futcontra'  # Nome do banco de dados
         )
 
         if conn.is_connected():
